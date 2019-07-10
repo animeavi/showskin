@@ -8,29 +8,26 @@ import org.bukkit.plugin.java.JavaPlugin;
 import cl.netgamer.showskin.ConfigAccessor;
 import cl.netgamer.showskin.Commands;
 
-public class SS extends JavaPlugin
-{
-	// PROPERTIES
-	private Logger logger = getLogger();
-	protected ConfigAccessor data;
-	protected ConfigurationSection actions;
-	protected Functions func;
-	
-	// DEBUG UTILITY
-	protected void log(String msg)
-	{
-		logger.info(msg);
-	}
+public class SS extends JavaPlugin {
+   // PROPERTIES
+   private Logger logger = getLogger();
+   protected ConfigAccessor data;
+   protected ConfigurationSection actions;
+   protected Functions func;
 
-	// ENABLER
-	public void onEnable()
-	{
-		// create a star hierarchy where plugin is the center
-		this.saveDefaultConfig();
-		data = new ConfigAccessor(this, "data.yml");
-		data.saveDefaultConfig();
-		func = new Functions(this);
-		new Events(this);
-		getCommand("showskin").setExecutor(new Commands(this));
-	}
+   // DEBUG UTILITY
+   protected void log(String msg) {
+      logger.info(msg);
+   }
+
+   // ENABLER
+   public void onEnable() {
+      // create a star hierarchy where plugin is the center
+      this.saveDefaultConfig();
+      data = new ConfigAccessor(this, "data.yml");
+      data.saveDefaultConfig();
+      func = new Functions(this);
+      new Events(this);
+      getCommand("showskin").setExecutor(new Commands(this));
+   }
 }
