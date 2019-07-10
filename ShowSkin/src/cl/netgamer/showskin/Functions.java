@@ -176,8 +176,10 @@ public class Functions
 		Inventory inv = getTempInventory(player.getName());
 		
 		// loop suit to drop pieces
-		for (ItemStack piece: Arrays.copyOf(inv.getContents(), 4))
+		try { 
+			for (ItemStack piece: Arrays.copyOf(inv.getContents(), 4))
 			loc.getWorld().dropItemNaturally(loc, piece);
+		} catch (Exception shhhh) {}
 		
 		// clear temp intentory
 		inv.clear();
@@ -209,7 +211,7 @@ public class Functions
 		case "IRON_CHESTPLATE":
 		case "DIAMOND_CHESTPLATE":
 		case "GOLD_CHESTPLATE":
-		//case "ELYTRA":
+		case "ELYTRA":
 			return 2;
 		case "LEATHER_HELMET":
 		case "CHAINMAIL_HELMET":
@@ -218,6 +220,7 @@ public class Functions
 		case "GOLD_HELMET":
 		case "PUMPKIN":
 		case "SKULL_ITEM":
+		case "DRAGON_HEAD":
 			return 3;
 		default:
 			return -1;
@@ -236,6 +239,7 @@ public class Functions
 		// heads
 		case "PUMPKIN":
 		case "SKULL_ITEM":
+		case "DRAGON_HEAD":
 			return 1;
 		// armor pieces
 		case "LEATHER_BOOTS":
@@ -258,7 +262,7 @@ public class Functions
 		case "IRON_HELMET":
 		case "DIAMOND_HELMET":
 		case "GOLD_HELMET":
-		//case "ELYTRA":
+		case "ELYTRA":
 			return 2;
 		}
 		// not equippable as armor
