@@ -178,7 +178,7 @@ public class Functions
 		// loop suit to drop pieces
 		try { 
 			for (ItemStack piece: Arrays.copyOf(inv.getContents(), 4))
-			loc.getWorld().dropItemNaturally(loc, piece);
+				loc.getWorld().dropItemNaturally(loc, piece);
 		} catch (Exception shhhh) {}
 		
 		// clear temp intentory
