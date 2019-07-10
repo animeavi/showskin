@@ -78,10 +78,7 @@ public class Functions
 			// create chests
 			chestCreate(player);
 		}
-		
-		// create unequip task entry if not exists
-		if (!tasks.containsKey(player.getName()))
-			tasks.put(player.getName(), null);
+
 	}
 	
 	// CREATE PLAYER TEMP CHEST

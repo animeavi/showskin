@@ -149,14 +149,13 @@ public class Events implements Listener
 	{
 		// only when player switching to creative mode storing armor
 		if (e.getNewGameMode() == GameMode.CREATIVE)
-			ss.func.checkEquipArmor(e.getPlayer(), "FORCE", "force");
+			ss.func.checkEquipArmor(e.getPlayer(), "FORCE", "equip");
 	}
 	
 	// WHEN PLAYER DIES EQUIP ARMOR IMMEDIATELY DO DROP IT (thanks to Kaezoncito for his report)
 	@EventHandler
 	public void onPlayerDeath(PlayerDeathEvent e)
 	{
-		//ss.func.checkEquipArmor(e.getEntity(), "FORCE", "force");
 		ss.func.dropSuit(e.getEntity());
 	}
 	
