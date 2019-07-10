@@ -158,10 +158,12 @@ public class Functions {
       Inventory inv = getTempInventory(player.getName());
 
       // loop suit to drop pieces
-      try {
-         for (ItemStack piece : Arrays.copyOf(inv.getContents(), 4))
+      for (ItemStack piece : Arrays.copyOf(inv.getContents(), 4)) {
+         try {
             loc.getWorld().dropItemNaturally(loc, piece);
-      } catch (Exception shhhh) {
+         } catch (Exception shhhh) {
+            continue;
+         }
       }
 
       // clear temp intentory
