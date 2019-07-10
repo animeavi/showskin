@@ -18,6 +18,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
+@SuppressWarnings("deprecation")
 public class Functions {
    // PROPERTIES
    private SS ss;
