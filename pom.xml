@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cl.netgamer.showskin</groupId>
+    <artifactId>InvisibleArmor</artifactId>
+    <version>5.0</version>
+    <packaging>jar</packaging>
+    <name>InvisibleArmor</name>
+    <description>Minecraft plugin to show your skin proudly to everyone without losing armor benefits</description>
+    <url>https://github.com/animeavi/InvisibleArmor</url>
+
+    <developers>
+        <developer>
+                <name>atesin</name>
+                <url>https://github.com/atesin</url>
+        </developer>
+        <developer>
+                <name>Zero</name>
+                <url>https://github.com/animeavi</url>
+        </developer>
+    </developers>
+
+    <properties>
+        <author>atesin</author>
+        <mainClass>cl.netgamer.showskin.SS</mainClass>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.10.2-R0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <defaultGoal>clean install</defaultGoal>
+        <resources>
+            <resource>
+                <directory>res</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>config.yml</include>
+                    <include>data.yml</include>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
