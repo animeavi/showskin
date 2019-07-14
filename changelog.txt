@@ -7,7 +7,13 @@ to do (future releases)
 - optionally equip armor on touch water having underwater enchantments
 - update damage calculations
 
-v4 (this release)
+v5 (this release)
+
+- catch exception on death if armor piece can't be dropped
+- stop armor from becoming hidden on first damage
+- handle elytra (for real now!) and dragon head
+
+v4
 
 - this changes thanks to JethroCraft from BukkitDev
 - added elytra support
