@@ -1,12 +1,3 @@
-to do (future releases)
-
-- work internally with uuid to increase stability
-- drop the need of having "physical" chests, by saving serialized items on yml
-- play a (cracking) sound alert on armor durability changes
-- detect when player is looking a right-clickable block/entity
-- optionally equip armor on touch water having underwater enchantments
-- update damage calculations
-
 v5 (this release)
 
 - catch exception on death if armor piece can't be dropped
@@ -45,13 +36,13 @@ v1
 - recalcule damage mitigation my enchantmets, falling anvil, fall damage
 - armor status messages
 
-todo
+TODO
 
 - detect when player is looking a right-clickable block/entity
 - work with uuid to avoid armor loss/steal on player change name
+- work internally with uuid to increase stability
 - optionally equip armor on touch water having underwater enchantments
-- update damage calculations
 - drop the need of having "physical" chests, by saving serialized items on yml
 - play a (cracking) sound alert on armor durability changes
-- add support for new 1.10.2 wearable items (elytra, dragon heads, etc.)
+- update damage calculations
 
