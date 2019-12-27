@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cl.netgamer.showskin</groupId>
     <artifactId>InvisibleArmor</artifactId>
-    <version>5.0</version>
+    <version>5.0.1</version>
     <packaging>jar</packaging>
     <name>InvisibleArmor</name>
     <description>Minecraft plugin to show your skin proudly to everyone without losing armor benefits</description>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.10.2-R0.1-SNAPSHOT</version>
+            <version>1.15.1-R0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
