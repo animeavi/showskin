@@ -1,5 +1,5 @@
 vidfk
--added netherite to the items list, hopefully correctly
+- added netherite to the items list, hopefully correctly
 
 v5 (this release)
 
