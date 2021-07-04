@@ -182,18 +182,21 @@ public class Functions {
       case "IRON_BOOTS":
       case "DIAMOND_BOOTS":
       case "GOLD_BOOTS":
+      case "NETHERITE_BOOTS":
          return 0;
       case "LEATHER_LEGGINGS":
       case "CHAINMAIL_LEGGINGS":
       case "IRON_LEGGINGS":
       case "DIAMOND_LEGGINGS":
       case "GOLD_LEGGINGS":
+      case "NETHERITE_LEGGINGS":
          return 1;
       case "LEATHER_CHESTPLATE":
       case "CHAINMAIL_CHESTPLATE":
       case "IRON_CHESTPLATE":
       case "DIAMOND_CHESTPLATE":
       case "GOLD_CHESTPLATE":
+      case "NETHERITE_CHESTPLATE":
       case "ELYTRA":
          return 2;
       case "LEATHER_HELMET":
@@ -201,6 +204,7 @@ public class Functions {
       case "IRON_HELMET":
       case "DIAMOND_HELMET":
       case "GOLD_HELMET":
+      case "NETHERITE_HELMET":
       case "PUMPKIN":
       case "SKULL_ITEM":
       case "DRAGON_HEAD":
@@ -223,6 +227,10 @@ public class Functions {
       case "DRAGON_HEAD":
          return 1;
       // armor pieces
+      case "NETHERITE_BOOTS":
+      case "NETHERITE_LEGGINGS":
+      case "NETHERITE_CHESTPLATE":
+      case "NETHERITE_HELMET":
       case "LEATHER_BOOTS":
       case "CHAINMAIL_BOOTS":
       case "IRON_BOOTS":
@@ -261,9 +269,11 @@ public class Functions {
          case "AIR":
             continue;
          case "DIAMOND_CHESTPLATE":
+         case "NETHERITE_CHESTPLATE":
             value -= 0.32;
             continue;
          case "DIAMOND_LEGGINGS":
+         case "NETHERITE_LEGGINGS":
          case "IRON_CHESTPLATE":
             value -= 0.24;
             continue;
@@ -275,7 +285,9 @@ public class Functions {
          case "CHAINMAIL_LEGGINGS":
             value -= 0.16;
          case "DIAMOND_BOOTS":
+         case "NETHERITE_BOOTS":
          case "DIAMOND_HELMET":
+         case "NETHERITE_HELMET":
          case "GOLD_LEGGINGS":
          case "LEATHER_CHESTPLATE":
             value -= 0.12;
