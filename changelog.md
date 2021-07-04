@@ -1,3 +1,6 @@
+vidfk
+-added netherite to the items list, hopefully correctly
+
 v5 (this release)
 
 - catch exception on death if armor piece can't be dropped
